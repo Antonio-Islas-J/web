@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Profesional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagen/menu-icono.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inf">Empresas o instituciones</a></li>
+                    <li><a href="#inf1">Proyectos</a></li>
+                    <li><a href="#inf2">Habilidades profesionales</a></li>
+                    <li><a href="#inf3">Logros</a></li>
+                    <li><a href="#inf4">Motivación</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="content">
+                <h1>Jose Martin Flores Albino</h1>
+                <p> <strong>Doctor en Ciencias y Control Automático <br>
+		            Maestria en Ciencias de la Ingenieria con especialidad en control automático
+		    </strong> </p>
+
+                <a href="#" class="btn-info">Más información</a>
+
+                <div id="extra-info" class="extra-info hidden">
+                    <h3>Sobre mí</h3>
+                    <p>
+                        Soy Doctor en Ciencias y Control Automático con experiencia en automatización industrial, diseño de sistemas
+                        eléctricos y electrónicos, así como una sólida carrera en la docencia e investigación.
+                    </p>
+                    <p>
+                        Me especializo en generar soluciones creativas e innovadoras en proyectos tecnológicos,con una fuerte vocación por formar a las futuras generaciones de ingenieros.
+                    </p>
+                    <p>
+                        📧 <strong>Contacto:</strong> <span id="email" style="cursor: pointer; color: blue; text-decoration: underline;">jmfloresa@uaemex.mx</span>
+                        <span id="copied-msg" style="display: none; color: green; margin-left: 10px;">¡Copiado!</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="services container">
+        <div class="services">
+            <section id="inf">
+                <h2>Empresas o instituciones</h2>
+                <p>Laborado en el Instituto Mexicano del petróleo. <br>
+                    SIEMENS México S.A de C.V. <br>
+                    Armada de México. <br>
+                    Tecnológico de Estudios Superiores de Coacalco. <br>
+                    Politécnica de Tulancingo.<br> 
+                    Centro Universitario UAEM Valle de México.</p>
+            </section>
+        </div>
+
+        <div class="services">
+            <section id="inf1">
+                <h2>Proyectos en los que  trabajó</h2>
+                <p> <strong>En la Armada de México:</strong> Proyecto de modernización y automatización de maquinaria. <br>
+                    <strong>Como Ingeniero de Diseño:</strong>  Diseño del sistema de alimentación de respaldo para máquinas de anestesia. <br>
+                    <strong>En el ámbito docente:</strong>  Dirección de 6 tesis de Licenciatura, 3 de Maestría.</p>
+            </section>
+        </div>
+
+        <div class="services">
+            <section id="inf2">
+                <h2>Habilidades profesionales</h2>
+                <p>En este momento la Docencia e Investigación, donde tengo amplios conocimientos en mi área,
+                    creativo, ordenado, disciplinado.</p>
+            </section>
+        </div>
+
+        <div class="services">
+            <section id="inf3">
+                <h2>Logros profesionales</h2>
+                <p>En todos y cada uno de mis responsabilidades. He logrado cumplir con éxito diversos objetivos 
+                    en cada una de las áreas en las que me he desempeñado, desde la gestión de proyectos tecnológicos 
+                    hasta la formación de profesionales altamente capacitados.</p>
+            </section>
+        </div>
+
+        <div class="services">
+            <section id="inf4">
+                <h2>Motivación</h2>
+                <p>Me gusta la tecnología, las matemáticas, la ingeniería y la docencia.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Elaborado por:</p>
+        <p>ISLAS JUAREZ JOSE ANTONIO</p>
+        <p>SANCHEZ RUEDA ERICK DANIEL</p>
+        <p>SANTOS SANCHEZ JUAN ANTONIO</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Botón para subir -->
+<button id="scrollTopButton" title="Ir arriba" style="display:none; position:fixed; bottom:40px; 
+right:60px; z-index:1000; padding:20px 30px; font-size:30px; border:none; border-radius:25px; 
+background:blue; color:white; cursor:pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+transition: background-color 0.3s;">  ↑
+</button>
+
+<script>
+  const scrollTopButton = document.getElementById("scrollTopButton");
+  // Mostrar el botón cuando el usuario baja 100px desde arriba
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  };
+  // Al hacer clic en el botón, subir suavemente a la parte superior
+  scrollTopButton.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+</script>
+
+</body>
+
+</html>
